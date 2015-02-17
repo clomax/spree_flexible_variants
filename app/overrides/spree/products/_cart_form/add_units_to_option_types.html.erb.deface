@@ -1,5 +1,5 @@
 <!-- insert_after 'span.variant-description' -->
 <% units = variant.unit_amount %>
-<% if units %>
+<% if @product.cut_from_whole? and units %>
   <span>(<%= units %> <%= units == 1 ? "unit" : "units" %>)</span>
 <% end %>
