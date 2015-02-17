@@ -1,0 +1,2 @@
+<!-- insert_before 'div#add_stock_form' -->
+<%= render partial: 'flexible_stock_form' %>

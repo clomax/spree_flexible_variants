@@ -1,0 +1,6 @@
+<!-- insert_before 'div#cart-form' -->
+<% if @product.cut_from_whole? %>
+  <div id="total_units" style="margin-bottom:5px">
+    <%= @product.units_on_hand %> units remaining. %>
+  </div>
+<% end %>

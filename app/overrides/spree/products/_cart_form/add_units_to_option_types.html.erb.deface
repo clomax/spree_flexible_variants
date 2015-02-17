@@ -1,0 +1,3 @@
+<!-- insert_after 'span.variant-description' -->
+<% units = variant.unit_amount %>
+<span>(<%= units %> <%= units == 1 ? "unit" : "units" %>)</span>
