@@ -9,3 +9,25 @@
   <%= render :partial => 'spree/admin/shared/edit_resource_links' %>
 <% end %>
 
+<table style="margin-top: 10px;">
+  <thead>
+    <tr>
+      <th><%= Spree.t(:variant) %></th>
+      <th>Unit worth</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @variants.each do |variant| %>
+      <tr>
+        <td><%= variant.sku_and_options_text %></td>
+        <td>
+            <%= form_for [:admin, @product, variant], method: :PATCH do |f| %>
+              <%= f.number_field :unit_amount, value: variant.unit_amount %>
+              <%= f.button Spree.t('actions.update') %>
+            <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
