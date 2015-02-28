@@ -28,7 +28,6 @@
     var quantity_spinner = document.getElementById('quantity');
     quantity_spinner.addEventListener("input", function(e) {
       Spree.updateQuantity(quantity_spinner);
-      return console.log(Spree.checkStock());
     })
 
     return radios.click(function(event) {
