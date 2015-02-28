@@ -25,8 +25,8 @@
 
     var number_of_units = ($('span#number_of_units')).data('num-units');
     var quantity_spinner = $('input#quantity[type="number"]');
-    var spinner = quantity_spinner.spinner({
-      change: function (event, ui) {
+    $('input#quantity[type="number"]').spinner({
+      stop: function (event, ui) {
         Spree.updateQuantity($(this));
       },
     });
