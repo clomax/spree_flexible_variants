@@ -10,7 +10,7 @@
     };
 
     Spree.updateQuantity = function(q_spinner) {
-      return quantity = q_spinner[0].valueAsNumber;
+      return quantity = q_spinner.valueAsNumber;
     };
 
     Spree.checkStock = function () {
@@ -24,12 +24,12 @@
     }
 
     var number_of_units = ($('span#number_of_units')).data('num-units');
-    var quantity_spinner = $('input#quantity[type="number"]');
-    $('input#quantity[type="number"]').spinner({
-      stop: function (event, ui) {
-        Spree.updateQuantity($(this));
-      },
-    });
+    //var quantity_spinner = $('input#quantity');
+    var quantity_spinner = document.getElementById('quantity');
+    quantity_spinner.addEventListener("input", function(e) {
+      Spree.updateQuantity(quantity_spinner);
+      return console.log(Spree.checkStock());
+    })
 
     return radios.click(function(event) {
       Spree.updateTotalUnits($(this));
