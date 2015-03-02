@@ -30,7 +30,7 @@
 
 
     var number_of_units = ($('span#number_of_units')).data('num-units');
-      if (number_of_units) {
+      if (number_of_units != 'undefined') {
         radios = $('#product-variants input[type="radio"]');
         if (radios.length > 0) {
           selectedRadio = $('#product-variants input[type="radio"][checked="checked"]');
