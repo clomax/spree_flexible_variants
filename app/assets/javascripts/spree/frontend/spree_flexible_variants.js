@@ -43,13 +43,11 @@
         Spree.checkStock();
 
         quantity_spinner.addEventListener("input", function(e) {
-          Spree.updateQuantity(quantity_spinner.valueAsNumber);
-          return console.log(Spree.checkStock());
+          return Spree.updateQuantity(quantity_spinner.valueAsNumber);
         })
 
         return radios.click(function(event) {
-          Spree.updateTotalUnits($(this).data('unitAmount'));
-          return console.log(Spree.checkStock());
+          return Spree.updateTotalUnits($(this).data('unitAmount'));
         });
       }
     });
