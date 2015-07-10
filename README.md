@@ -19,7 +19,7 @@ Installation
 Add spree_flexible_variants to your Gemfile:
 
 ```ruby
-gem 'spree_flexible_variants'
+gem 'spree_flexible_variants', :git => 'git@github.com:clomax/spree_flexible_variants.git', :branch => 'xxx'
 ```
 
 Bundle your dependencies and run the installation generator:
