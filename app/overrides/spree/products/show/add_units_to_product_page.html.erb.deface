@@ -1,6 +1,8 @@
 <!-- insert_before 'div#cart-form' -->
-<% if @product.cut_from_whole? %>
+<% if @product.cut_from_whole? and @product.units_on_hand %>
   <div id="total_units" style="margin-bottom:5px">
-    <%= @product.units_on_hand %> units remaining. %>
+    <span id="number_of_units" data-num-units="<%= @product.units_on_hand %>" data-flexible="<%= @product.cut_from_whole? %>">
+      <%= @product.units_on_hand %>
+    </span> units remaining.
   </div>
 <% end %>

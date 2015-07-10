@@ -1,7 +1,17 @@
 SpreeFlexibleVariants
 =====================
 
-Introduction goes here.
+Allows variants to be sold as different sized cuts from a whole product. E.g.
+Fat/thin quarters, half metres, and metres from a bolt of fabric.
+
+HowTo
+-----
+
+Each product has the optio, `Flexible Variants`, to sell variants at different
+sized cuts. The number of flexible units is the total number of the smallest
+size you can sell.
+
+Turn off Spree's inventory tracking for each variant in the product.
 
 Installation
 ------------
@@ -9,7 +19,7 @@ Installation
 Add spree_flexible_variants to your Gemfile:
 
 ```ruby
-gem 'spree_flexible_variants'
+gem 'spree_flexible_variants', :git => 'git@github.com:clomax/spree_flexible_variants.git', :branch => 'xxx'
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -36,4 +46,4 @@ Simply add this require statement to your spec_helper:
 require 'spree_flexible_variants/factories'
 ```
 
-Copyright (c) 2015 [name of extension creator], released under the New BSD License
+Copyright (c) 2015 Craig Lomax, released under the New BSD License

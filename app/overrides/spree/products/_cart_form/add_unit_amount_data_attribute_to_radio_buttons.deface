@@ -1,0 +1,7 @@
+Deface::Override.new(
+  :virtual_path => "spree/products/_cart_form",
+  :name         => "add_unit_amount_data_attribute_to_radio_buttons",
+  :replace      => "erb:contains('radio_button_tag')",
+  :text         =>
+    "<%= radio_button_tag \"variant_id\", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, currency: current_currency, with_currency: true).to_s, 'data-unit-amount' => variant.unit_amount.to_s %>"
+)
