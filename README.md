@@ -1,7 +1,17 @@
 SpreeFlexibleVariants
 =====================
 
-Introduction goes here.
+Allows variants to be sold as different sized cuts from a whole product. E.g.
+Fat/thin quarters, half metres, and metres from a bolt of fabric.
+
+HowTo
+-----
+
+Each product has the optio, `Flexible Variants`, to sell variants at different
+sized cuts. The number of flexible units is the total number of the smallest
+size you can sell.
+
+Turn off Spree's inventory tracking for each variant in the product.
 
 Installation
 ------------
