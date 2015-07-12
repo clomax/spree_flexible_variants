@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/clomax/spree_flexible_variants.svg?branch=2-3-stable)](https://travis-ci.org/clomax/spree_flexible_variants)
+
 SpreeFlexibleVariants
 =====================
 
