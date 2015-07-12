@@ -1,7 +1,7 @@
 module Spree
   Order.class_eval do
 
-  state_machine.after_transition from: :payment, do: :update_units_of_products
+  state_machine.after_transition to: :complete, do: :update_units_of_products
 
   def update_units_of_products
     line_items.each do |l|
