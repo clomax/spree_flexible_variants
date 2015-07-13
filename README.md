@@ -9,7 +9,7 @@ Fat/thin quarters, half metres, and metres from a bolt of fabric.
 HowTo
 -----
 
-Each product has the optio, `Flexible Variants`, to sell variants at different
+Each product has the option, `Flexible Variants`, to sell variants at different
 sized cuts. The number of flexible units is the total number of the smallest
 size you can sell.
 
