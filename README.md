@@ -13,6 +13,19 @@ Each product has the option, `Flexible Variants`, to sell variants at different
 sized cuts. The number of flexible units is the total number of the smallest
 size you can sell.
 
+##### Example:
+
+From a 10m bolt of fabric:
+
+| Size | Units |
+|------|-------:|
+|Thin quarter | 1 |
+|Fat quarter | 1 |
+|Half metre | 2 |
+|Metre | 4 |
+
+There are forty quarter metres in ten metres, therefore the total number of units is 40.
+
 Turn off Spree's inventory tracking for each variant in the product.
 
 Installation
