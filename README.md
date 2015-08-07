@@ -43,6 +43,10 @@ Bundle your dependencies and run the installation generator:
 bundle
 bundle exec rails g spree_flexible_variants:install
 ```
+TODO
+----
+
+* Add a way of setting unit amount for each variant - at the moment you have to do it in the DB
 
 Testing
 -------
